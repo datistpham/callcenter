@@ -33,17 +33,6 @@ export default function AddTournament4(props) {
         </DialogContent>
         <DialogActions>
           <Button
-            variant="contained"
-            onClick={async () => {
-              // eslint-disable-next-line react/prop-types
-              // props?.setOpen(4)
-              // eslint-disable-next-line react/prop-types
-              props?.createTournament()
-            }}
-          >
-            Tạo giải đấu
-          </Button>
-          <Button
             onClick={() => {
               // eslint-disable-next-line react/prop-types
               props?.setOpen(3)

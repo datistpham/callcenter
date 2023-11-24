@@ -196,7 +196,7 @@ export default function DetailStudentTable(props) {
         </div>
       </div>
       {/*  */}
-      <div style={{ width: '100%', marginBottom: 12, marginTop: 12 }}>
+      {/* <div style={{ width: '100%', marginBottom: 12, marginTop: 12 }}>
         <div style={{ marginBottom: 12, marginTop: 20 }}>Mod chấm trình: </div>
         <FormControl fullWidth>
           <InputLabel id="demo-simple-select-label">Mod chấm trình</InputLabel>
@@ -214,7 +214,7 @@ export default function DetailStudentTable(props) {
             ))}
           </Select>
         </FormControl>
-      </div>
+      </div> */}
       <div style={{}}>
         <Button
           variant="contained"
@@ -227,7 +227,7 @@ export default function DetailStudentTable(props) {
                 gender,
                 fullName,
                 bio,
-                gradingMod,
+                // gradingMod: "",
                 userId: id,
                 address,
                 dob,
@@ -238,7 +238,7 @@ export default function DetailStudentTable(props) {
             props?.handleChange()
             // eslint-disable-next-line react/prop-types
             props?.setOpen(false)
-            swal('', 'Cập nhật thông tin vận động viên thành công', 'success')
+            swal('', 'Cập nhật thông tin Người dùng thành công', 'success')
           }}
         >
           Cập nhật{' '}

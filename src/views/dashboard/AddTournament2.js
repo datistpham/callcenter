@@ -140,7 +140,7 @@ export default function AddTournament2(props) {
               }}
             >
               <div style={{ width: '100%' }}>
-                <div style={{ margin: '8px 0' }}>Vận động viên dự kiến</div>
+                <div style={{ margin: '8px 0' }}>Người dùng dự kiến</div>
                 <TextField
                   value={expectedAtheletes}
                   onChange={(e) => {
@@ -148,7 +148,7 @@ export default function AddTournament2(props) {
                   }}
                   style={{ height: 40 }}
                   fullWidth
-                  placeholder="Nhập tên số vận động viên dự kiến"
+                  placeholder="Nhập tên số Người dùng dự kiến"
                 />
               </div>
             </div>

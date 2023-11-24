@@ -51,14 +51,6 @@ const Tournament = () => {
 
   return (
     <div>
-      <Button
-        variant="contained"
-        onClick={() => {
-          setStep(1)
-        }}
-      >
-        Tạo giải đấu
-      </Button>
       <ListTournament />
       <AddTournament
         open={step}

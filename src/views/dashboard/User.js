@@ -43,10 +43,8 @@ const User = () => {
     },
     { field: 'zaloLink', headerName: 'Số Zalo', flex: 1 },
     { field: 'phoneNumber', headerName: 'Số điện thoại liên hệ', flex: 1 },
-    { field: 'gradingMod', headerName: 'Mod chấm trình', flex: 1 },
     { field: 'address', headerName: 'Địa chỉ', flex: 1 },
     { field: 'dob', headerName: 'Năm sinh', flex: 1 },
-    { field: 'dateJoin', headerName: 'Ngày tham gia', flex: 1 },
     {
       field: 'lastUpdated',
       headerName: 'Cập nhật lần cuối',
@@ -57,6 +55,19 @@ const User = () => {
     },
     { field: 'bio', headerName: 'Tiểu sử', flex: 1 },
     { field: 'nickName', headerName: 'Biệt danh', flex: 1 },
+    {
+      field: 'role',
+      headerName: 'Chức vụ',
+      flex: 1,
+      renderCell: (param) => {
+        return (
+          <div className="">
+            {param.row.role === 0 && <div>Người dùng</div>}
+            {param.row.role === 1 && <div>Tài xế</div>}
+          </div>
+        )
+      },
+    },
     {
       field: 'action',
       headerName: 'Action',

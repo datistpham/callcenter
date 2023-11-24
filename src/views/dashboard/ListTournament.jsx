@@ -72,32 +72,8 @@ const ListTournament = () => {
   }
   const columns = [
     { field: 'id', headerName: 'ID', flex: 1 },
-    { field: 'title', headerName: 'Tên giải đấu', flex: 1 },
-    { field: 'tournament_submission_point', headerName: 'Điểm giải đấu tối đa', flex: 1 },
-    {
-      field: 'maximum_individual_point',
-      headerName: 'Điểm tối đa cá nhân',
-      flex: 1,
-    },
-    {
-      field: 'organization_units',
-      headerName: 'Đơn vị tổ chức',
-      // description: 'This column has a value getter and is not sortable.',
-      // sortable: false,
-      flex: 1,
-      // valueGetter: (params) => `${params.row.firstName || ''} ${params.row.lastName || ''}`,
-    },
-    { field: 'hold_time', headerName: 'Thời gian tổ chức', flex: 1 },
-    { field: 'registration_dealine', headerName: 'Hạn chót đăng ký', flex: 1 },
-    { field: 'expected_athletes', headerName: 'Vận động viên dự kiến', flex: 1 },
-    {
-      field: 'image_tournament',
-      headerName: 'Ảnh giải đấu',
-      flex: 1,
-      renderCell: (param) => {
-        return <img alt={''} src={param.row.image_tournament} style={{ aspectRatio: 4 / 2 }} />
-      },
-    },
+    { field: 'booking_time_handle', headerName: 'Thời gian khởi tạo', flex: 1 },
+    { field: 'booking_time_init', headerName: 'Thời gian xác nhận', flex: 1 },
     {
       field: 'action',
       headerName: 'Action',

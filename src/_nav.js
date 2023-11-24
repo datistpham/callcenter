@@ -28,7 +28,7 @@ const _nav = [
   // },
   {
     component: CNavItem,
-    name: 'Vận động viên',
+    name: 'Người dùng',
     to: '/users',
     icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
     badge: {
@@ -38,17 +38,7 @@ const _nav = [
   },
   {
     component: CNavItem,
-    name: 'Mod chấm trình',
-    to: '/mods',
-    icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
-    badge: {
-      color: 'info',
-      // text: 'NEW',
-    },
-  },
-  {
-    component: CNavItem,
-    name: 'Giải đấu',
+    name: 'Danh sách đặt xe',
     to: '/tournament',
     icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
     badge: {

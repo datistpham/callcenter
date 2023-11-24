@@ -4,7 +4,7 @@ import { API_URL } from 'src/config'
 const getAllTournaments = async (token) => {
   try {
     const res = await axios({
-      url: API_URL + '/api/v2/tournaments',
+      url: API_URL + '/api/v1/list_booking',
       method: 'get',
       // params: {...data},
       headers: {
